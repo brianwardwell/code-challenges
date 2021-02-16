@@ -29,3 +29,5 @@ var reverse = function(x) {
    return revInt
    }
 };
+
+//SOLVE TIME: 2 hours 41 minutes
