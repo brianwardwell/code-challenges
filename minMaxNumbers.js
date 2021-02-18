@@ -29,3 +29,5 @@ function minMax(arr) {
         return solutionArr
     }
 }
+//I got stuck trying to create a custom sort (selection, bubble, etc.) which took about an hour until i decided to use the .sort() method
+//Completion time 1 hour 44 mins
