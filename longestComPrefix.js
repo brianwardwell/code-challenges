@@ -20,3 +20,19 @@
 // 0 <= strs.length <= 200
 // 0 <= strs[i].length <= 200
 // strs[i] consists of only lower-case English letters.
+
+//Understand:
+// input: array of between 0 and 200 strings
+//     array can be empty
+//     each array item could potentially be an empty string
+// output: single string including letters that the beginning of all of the words have in common
+// 
+
+//Test:
+// ['bat', 'bag', 'bagel'] --> 'ba'
+// [''] --> ''
+// ['', 'bat', 'bag', 'bagel'] --> ''
+
+//Pseudo:
+//  if arrays length is less than 1, return empty string
+//  

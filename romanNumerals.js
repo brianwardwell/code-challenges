@@ -74,3 +74,5 @@ romanToInt(romanNumeral)
 // 4.	repeat 3 for x and c subtraction scenarios 
 // 5.	if step 3 and 4 scenarios don’t apply, add the 2 numbers together and add the value to the new array
 // 6.	sum the new array
+
+// completion time: 1 hour 28
