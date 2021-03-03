@@ -35,4 +35,6 @@
 
 //Pseudo:
 //  if arrays length is less than 1, return empty string
-//  
+//  Iterate through array and turn each item into an array of strings
+//  Iterate again over the new arrays of strings, if first indexes in each array match, save them
+//  Repeat above step until the indexes don't match, return saved object of matching letters
