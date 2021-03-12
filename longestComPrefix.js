@@ -38,3 +38,9 @@
 //  Iterate through array and turn each item into an array of strings
 //  Iterate again over the new arrays of strings, if first indexes in each array match, save them
 //  Repeat above step until the indexes don't match, return saved object of matching letters
+
+let strs = ["flower","flow","flight"]
+
+for (i=0; i<strs.length; i++) {
+  if strs[0][i] === strs[1][i] && strs[2][i] === strs[0][i]
+}
