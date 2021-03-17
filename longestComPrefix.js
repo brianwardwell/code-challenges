@@ -35,12 +35,23 @@
 
 //Pseudo:
 //  if arrays length is less than 1, return empty string
-//  Iterate through array and turn each item into an array of strings
-//  Iterate again over the new arrays of strings, if first indexes in each array match, save them
-//  Repeat above step until the indexes don't match, return saved object of matching letters
+//  check first letter of each word
+//  if first letters are all the same add that letter to the solution string
+//  repeat for all of the letters in the first word
+//  return the solution string
 
-let strs = ["flower","flow","flight"]
+//letter = 0
+// word = 1
+// is word at index letter equal the value at the letter index
 
-for (i=0; i<strs.length; i++) {
-  if strs[0][i] === strs[1][i] && strs[2][i] === strs[0][i]
-}
+var longestCommonPrefix = function(strs) {
+    if (!strs.length) return ''
+ for (letterIndex=0; letterIndex<strs[0].length; letterIndex++) {
+    for (wordIndex=1; wordIndex<strs.length; wordIndex++) {
+      if (strs[0][letterIndex] !== strs[wordIndex][letterIndex] ) {
+        return strs[0].slice(0,letterIndex)
+      }
+    }
+    } 
+  return strs[0]
+};
