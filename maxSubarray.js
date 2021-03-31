@@ -21,3 +21,21 @@ var maxSubArray = function(nums) {
     return highestSum;
     
 }
+
+//SECONDARY O(N) SOLUTION
+//  This rewrites the current subarray everytime the num is bigger than num + currentSum (meaning the current sum is negative)
+var maxSubArray = function(nums) {
+    let currentSum = nums[0];
+    let highestSum = nums[0];
+    for (i=1; i<nums.length; i++) {
+        if (nums[i] > currentSum + nums[i]) {
+            currentSum = nums[i]
+        } else {
+            currentSum += nums[i]
+        }
+        if (currentSum > highestSum) {
+            highestSum = currentSum;
+        }
+    }
+    return highestSum;   
+}
