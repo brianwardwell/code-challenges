@@ -19,7 +19,6 @@
 var addBinary = function(a, b) {
     let splitA = a.split('');
     let splitB = b.split('');
-    console.log(splitA, splitB)
     let carry = 0;
     let solution = [];
     let indexA = splitA.length-1;
